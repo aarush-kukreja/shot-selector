@@ -1,0 +1,37 @@
+app:
+  name: "Shot-Selector"
+  version: "0.1.0"
+  description: "Intelligent system for selecting optimal prompting strategies"
+
+data:
+  data_dir: "data"
+  training_data_path: "data/raw/training_data.csv"
+  processed_data_path: "data/processed/processed_data.csv"
+  test_size: 0.2
+  random_state: 42
+
+model:
+  name: "prompt-strategy-selector"
+  version: "0.1.0"
+  save_dir: "models"
+  parameters:
+    n_estimators: 100
+    max_features: 1000
+    random_state: 42
+  vectorizer:
+    max_features: 1000
+    stop_words: "english"
+    ngram_range: [1, 2]
+
+logging:
+  level: "INFO"
+  file: "logs/application.log"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  max_size: 1048576  # 1MB
+  backup_count: 5
+
+server:
+  host: "0.0.0.0"
+  port: 5000
+  debug: false
+  workers: 4

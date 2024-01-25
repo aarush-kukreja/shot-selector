@@ -1,0 +1,8 @@
+prompt_text,optimal_strategy,prompt_length,complexity_score,strategy
+what is 2+2?,zero-shot,3,3.166666666666667,0
+what is the chemical symbol for gold?,zero-shot,7,5.714285714285714,0
+create a marketing tagline for a coffee shop,one-shot,8,6.3125,1
+develop a project management plan,three-shot,5,5.4,3
+write a research paper outline,two-shot,5,5.1,2
+write a technical documentation for an api,two-shot,7,6.071428571428571,2
+create an employee training program,three-shot,5,5.6,3

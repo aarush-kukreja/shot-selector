@@ -1,0 +1,33 @@
+prompt_text,optimal_strategy
+What is the capital of France?,zero-shot
+Translate 'hello' to Spanish,zero-shot
+What is 2+2?,zero-shot
+What color is the sky?,zero-shot
+What is the chemical symbol for gold?,zero-shot
+Who wrote Romeo and Juliet?,zero-shot
+What is the speed of light?,zero-shot
+What is the largest planet in our solar system?,zero-shot
+Generate a recipe for chocolate chip cookies,one-shot
+Write a formal email requesting time off,one-shot
+Create a marketing tagline for a coffee shop,one-shot
+Write a haiku about nature,one-shot
+Compose a tweet about AI technology,one-shot
+Write a product description for headphones,one-shot
+Create a job posting for a software developer,one-shot
+Write a movie review for an action film,one-shot
+Design a workout routine for beginners,two-shot
+Write a business proposal for a startup,two-shot
+Create a lesson plan for teaching math,two-shot
+Write a technical documentation for an API,two-shot
+Develop a social media content calendar,two-shot
+Create a financial budget template,two-shot
+Design a customer survey questionnaire,two-shot
+Write a research paper outline,two-shot
+Create a comprehensive marketing strategy,three-shot
+Develop a project management plan,three-shot
+Write a detailed business case study,three-shot
+Create an employee training program,three-shot
+Design a complex software architecture,three-shot
+Develop a crisis management protocol,three-shot
+Create a strategic five-year business plan,three-shot
+Write a comprehensive research methodology,three-shot
