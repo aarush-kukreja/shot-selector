@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="hero">
+    <h1>Welcome to Shot Selector</h1>
+    <p>Intelligent system for selecting optimal prompting strategies</p>
+    <a href="{{ url_for('analyze') }}" class="cta-button">Try it Now</a>
+</div>
+
+<div class="features">
+    <div class="feature-card">
+        <h3>Zero-Shot</h3>
+        <p>Direct prompting without examples</p>
+    </div>
+    <div class="feature-card">
+        <h3>One-Shot</h3>
+        <p>Learning from a single example</p>
+    </div>
+    <div class="feature-card">
+        <h3>Chain-of-Thought</h3>
+        <p>Step-by-step reasoning approach</p>
+    </div>
+</div>
+{% endblock %} 

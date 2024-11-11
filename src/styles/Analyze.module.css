@@ -1,0 +1,67 @@
+.analysisContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.promptForm {
+  background-color: var(--input-bg);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.formGroup textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  font-family: 'Courier New', Courier, monospace;
+  resize: vertical;
+}
+
+.submitButton {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.submitButton:hover {
+  background-color: var(--primary-color);
+}
+
+.submitButton:disabled {
+  background-color: var(--primary-color);
+  cursor: not-allowed;
+}
+
+.resultContainer {
+  background-color: var(--input-bg);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+}
+
+.resultContent {
+  margin-top: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.explanation {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border-color);
+} 

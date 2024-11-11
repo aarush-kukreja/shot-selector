@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from src.models.model import PromptStrategyModel
 from src.utils.logger import setup_logger
 from src.utils.helpers import load_config
@@ -12,6 +12,16 @@ app = Flask(__name__)
 config = load_config('src/config/config.yaml')
 model_path = Path(config['model']['save_dir']) / f"{config['model']['name']}.joblib"
 model = joblib.load(model_path)
+
+@app.route('/')
+def home():
+    """Home page"""
+    return render_template('home.html')
+
+@app.route('/analyze')
+def analyze():
+    """Analysis page"""
+    return render_template('analyze.html')
 
 @app.route('/health', methods=['GET'])
 def health_check():
@@ -84,4 +94,4 @@ def batch_predict():
         }), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=5005)

@@ -1,0 +1,39 @@
+.hero {
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.hero h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  text-decoration: none;
+  border: 1px solid var(--border-color);
+  margin-top: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.ctaButton:hover {
+  background-color: var(--primary-color);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.featureCard {
+  background-color: var(--input-bg);
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  text-align: left;
+}

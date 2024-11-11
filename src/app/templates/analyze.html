@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}Analyze Prompt{% endblock %}
+
+{% block content %}
+<div class="analysis-container">
+    <h2>Analyze Your Prompt</h2>
+    <form id="promptForm" class="prompt-form">
+        <div class="form-group">
+            <label for="prompt">Enter your prompt:</label>
+            <textarea id="prompt" name="prompt" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="submit-button">Analyze</button>
+    </form>
+
+    <div id="result" class="result-container" style="display: none;">
+        <h3>Analysis Result</h3>
+        <div class="result-content">
+            <p><strong>Recommended Strategy:</strong> <span id="strategy"></span></p>
+            <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+            <div class="explanation">
+                <strong>Explanation:</strong>
+                <p id="explanation"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/analyze.js') }}"></script>
+{% endblock %} 
